@@ -1,0 +1,83 @@
+.container {
+    width: 457px;
+    height: 138px;
+    border: 1px solid black;
+    display: flex;
+    margin: 4px;
+}
+
+.img-con {
+    width: 130px;
+    height: 130px;
+    margin: 4px;
+}
+
+.text-con {
+    margin-left: 14px;
+    height: 130px;
+    margin-top: 4px;
+    padding: 0px;
+}
+
+.name {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 14px;
+    margin-top: 16px;
+}
+
+.text {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 20px;
+    color: #000000;
+    margin: 0px;
+}
+
+.icon-con {
+    display: flex;
+    align-content: center;
+    margin-top: 24px;
+    padding: 0px;
+    height: 20px;
+}
+
+.icon1 {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-top: 0px;
+}
+
+.icon2 {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-top: 0px;
+}
+
+.icon3 {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.img3:hover {
+    background-image: url("image/icons8-heart-20.png");
+}
+
+.dis {
+    margin-left: 14px;
+    font-family: roboto;
+    font-weight: medium;
+    font-size: 15px;
+    color: #858991;
+}
