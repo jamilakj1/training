@@ -1,0 +1,19 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(image/quantum/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@mixin green() {
+    color: #1F7A54;
+    text-align: right;
+    font-size: 10px;
+}
+
+@mixin flexcenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$textsize:12px;
+$textcolor:#666666;

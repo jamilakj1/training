@@ -1,180 +1,175 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url(image/quantum/Quicksand/Quicksand-VariableFont_wght.ttf);
-}
-
-body {
-    background-color: #EEEEEE;
-    font-family: myFirstFont;
-}
-
-#header {
-    background-image: url("image/quantum/headerback.png");
-    border-bottom: 2px solid #31B9E4;
-    padding-left: 20px;
-}
-
-.b-header {
-    display: flex;
-}
-
-.bh {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.back {
-    justify-self: left;
-}
-
-.radi {
-    padding-top: 14px;
-    align-items: center;
-    font-size: 10px;
-}
-
-.radi img {
-    width: 10px;
-    height: 10px;
-    padding-left: 10px;
-}
-
-.inputs {
-    font-size: 15px;
-    color: #000000;
-    border-bottom: 1px solid #37363638;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.inputs1 {
-    font-size: 10px;
-    color: #020000ec;
-    border-bottom: 1px solid #37363638;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 6px;
-}
-
-.inputs2 {
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.green {
-    color: #1F7A54;
-    text-align: right;
-    font-size: 10px;
-}
-
-.texts {
-    font-size: 10px;
-    margin-top: 20px;
-    color: #1F2834;
-}
-
-button {
-    background-color: #3FD28B;
-    border: 0px;
-    color: #1F2834;
-    padding: 10px 80px;
-    border-radius: 5px;
-    margin-top: 10px;
-    justify-self: center;
-}
-
-.login-body {
-    margin-top: 50px;
-    border-top: 2px solid #31B9E4;
-    align-items: center;
-    justify-items: center;
-    background-color: #FFFFFF;
-    width: 300px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-}
-
-.b-footer {
-    color: #1F7A54;
-    font-size: 12px;
-    text-align: center;
-    column-gap: 10px;
-    margin-top: auto;
-    margin-bottom: 10px;
-}
-
-#footer {
-    background-color: #E0E1E1;
-    display: flex;
-    font-size: 12px;
-    align-items: center;
-    column-gap: 20px;
-    justify-content: center;
-    padding-left: auto;
-    padding-right: auto;
-}
-
-#footer img {
-    padding: 10px;
-}
-
-
-/* 
-.login-body {
-    display: flex;
-    flex-direction: column;
-    column-gap: 20px;
-    align-items: center;
-    border-top: 2px solid #31B9E4;
-    background-color: #FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    text-align: center;
-    width: 50%;
-    padding: 20px;
-}
-
-.b-header {
-    margin-top: 20px;
-    font-size: 24px;
-}
-
-.back {
-    margin-right: auto;
-}
-
-.datas {
-    padding: 0%;
-}
-
-.radi {
-    align-content: center;
-}
-
-.forgot {
-    color: #1F7A54;
-    text-align: right;
-    font-size: 15px;
-}
-
-button {
-    background-color: #3FD28B;
-    border: 0px;
-    color: #1F2834;
-    padding: 10px 80px;
-}
-
-.input {
-    align-items: center;
-    justify-content: space-between;
-} */
+        @font-face {
+            font-family: myFirstFont;
+            src: url(image/quantum/Quicksand/Quicksand-VariableFont_wght.ttf);
+        }
+        
+        body {
+            background-color: #EEEEEE;
+            font-family: myFirstFont;
+        }
+        
+        #header {
+            background-image: url("image/quantum/headerback.png");
+            border-bottom: 2px solid #31B9E4;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        #header div {
+            margin-left: auto;
+        }
+        
+        .navbar {
+            display: flex;
+            align-content: center;
+            justify-content: right;
+        }
+        
+        .navbar .hide {
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 17px;
+        }
+        
+        .navbar .icon {
+            display: none;
+        }
+        
+        .navbar img {
+            width: 32px;
+            height: 32px;
+            border-radius: 32px;
+        }
+        
+        .course-class {
+            margin-top: 15px;
+            background-color: #8DDC97;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 6px;
+        }
+        
+        .course-num {
+            display: flex;
+            justify-content: center;
+            border-bottom: 3px solid black;
+        }
+        
+        .sorting {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .courses {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+        }
+        
+        .course {
+            display: grid;
+            padding: 12px;
+            width: 470px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 202px 49px;
+        }
+        
+        .course .image {
+            grid-row: 1;
+            grid-column: 1/span 4;
+            height: 160px;
+            width: 130px;
+            padding-bottom: 16px;
+            padding-right: 16px;
+            padding-left: 24px;
+            padding-top: 24px;
+        }
+        
+        .course-type {
+            margin: -24px 0 0 -24px;
+        }
+        
+        .course .detais {
+            grid-row: 1;
+            grid-column: 5/span 8;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .course .detais .topic {
+            display: flex;
+        }
+        
+        .course .detais h3,
+        h4,
+        p {
+            margin: 0px;
+        }
+        
+        .course .detais .subject {
+            display: flex;
+            justify-content: left;
+            column-gap: 15px;
+        }
+        
+        .course .icons {
+            grid-row: 2;
+            grid-column: 1/-1;
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid black;
+        }
+        
+        .course .icons1 {
+            grid-row: 2;
+            grid-column: 1/-1;
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid black;
+        }
+        
+        .b-footer {
+            color: #1F7A54;
+            font-size: 12px;
+            text-align: center;
+            column-gap: 10px;
+            margin-top: auto;
+            margin-bottom: 10px;
+        }
+        
+        #footer {
+            background-color: #E0E1E1;
+            display: flex;
+            font-size: 12px;
+            align-items: center;
+            column-gap: 20px;
+            justify-content: center;
+            padding-left: auto;
+            padding-right: auto;
+        }
+        
+        #footer img {
+            padding: 10px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .navbar .hide {
+                display: none;
+            }
+            .navbar .hamburger a {
+                float: right;
+                display: flex;
+            }
+        }

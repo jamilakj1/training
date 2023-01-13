@@ -6,17 +6,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div class="container">
         <div id="header">
             <img src="/image/quantum/icons/logo used in header.svg" alt="header" />
+            <div class="navbar">
+                <div class="hide">
+                    <a href="/login.html">Dashoard</a>
+                    <a href="#">Content</a>
+                    <a href="#">User</a>
+                    <a href="#">Reports</a>
+                    <a href="#">Admin</a>
+                </div>
+                <a href="#"><img src="image/quantum/icons/alerts.svg" alt="" class="alert" /></a>
+                <a href="#"><img src="image/quantum/icons/announcements.svg" alt="" /></a>
+                <a href="#"><img src="image/quantum/icons/images.jpg" alt="" class="image" /></a>
+                <div class="hamburger">
+                    <a href="#"><img src="image/quantum/icons/hamburger-menu.svg" alt="" /></a>
+                </div>
+            </div>
         </div>
-        <div>
-            <span>hello</span>
-            <img src="image/quantum/icons/back.svg" alt="" />
+        <div class="course-class">
+            <div class="course-num">
+                <div>
+                    <img src="image/quantum/icons/courses.svg" alt="" />
+                    <span class="num">4</span><span> Courses</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="image/quantum/icons/classes.svg" alt="" />
+                    <span class="num">4</span><span> Classes</span>
+                </div>
+            </div>
+        </div>
+        <div class="sorting">
+            <div class="showing">Showing 4 of 4 classes</div>
+            <div class="sorttype">
+                Sort By
+                <select name="types" id="types">
+            <option value="course">Course Name</option>
+            <option value="modified">Modified</option>
+            <option value="size">Size</option>
+          </select>
+                <img src="image/quantum/icons/sort.svg" alt="" />
+            </div>
+        </div>
+        <hr />
+        <div class="courses">
+            <div class="course">
+                <div class="image">
+                    <img src="image/quantum/images/imageMask.png" alt="" />
+                </div>
+                <div class="detais">
+                    <div class="topic">
+                        <h3>Acceleration</h3>
+                        <img src="image/quantum/icons/favourite.svg" alt="" />
+                    </div>
+                    <div class="subject">
+                        <h4>Physics</h4>
+                        <h4>Grade 7+2</h4>
+                    </div>
+
+                    <p class="unit-num">
+                        <span>4</span> Units <span>10</span> Lessons
+                        <span>24</span> Topics
+                    </p>
+                    <div class="classes">
+                        Mr Frank's Class B
+                        <img src="image/quantum/icons/arrow-down.svg" alt="" />
+                    </div>
+                    <div class="numbers">
+                        <div class="students">50 students</div>
+                        <div class="dates">21-Jan-2020-21-Aug-2020</div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div><img src="image/quantum/icons/preview.svg" alt="" /></div>
+                    <div>
+                        <img src="image/quantum/icons/manage course.svg" alt="" />
+                    </div>
+                    <div>
+                        <img src="image/quantum/icons/grade submissions.svg" alt="" />
+                    </div>
+                    <div><img src="image/quantum/icons/reports.svg" alt="" /></div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="image">
+                    <img src="image/quantum/images/imageMask-1.png" alt="" />
+                </div>
+                <div class="detais">
+                    <div class="topic">
+                        <h3>Displacement, Velocity and Speed</h3>
+                        <img src="image/quantum/icons/favourite.svg" alt="" />
+                    </div>
+                    <div class="subject">
+                        <h4>Physics 2</h4>
+                        <h4>Grade 6+3</h4>
+                    </div>
+                    <p class="unit-num">
+                        <span>2</span> Units <span>15</span> Lessons
+                        <span>20</span> Topics
+                    </p>
+                    <div class="classes">
+                        No Classes
+                        <img src="image/quantum/icons/arrow-down.svg" alt="" />
+                    </div>
+                    <div class="numbers">
+                        <div class="students"></div>
+                        <div class="dates"></div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div><img src="image/quantum/icons/preview.svg" alt="" /></div>
+                    <div class="imag">
+                        <img src="image/quantum/icons/manage course.svg" alt="" />
+                    </div>
+                    <div class="imag">
+                        <img src="image/quantum/icons/grade submissions.svg" alt="" />
+                    </div>
+                    <div><img src="image/quantum/icons/reports.svg" alt="" /></div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="image">
+                    <img src="image/quantum/images/imageMask-3.png" alt="" />
+                </div>
+                <div class="detais">
+                    <div class="topic">
+                        <h3>
+                            Introduction to Biology: Micro organisms and how they affect the other Life Systems in Environment
+                        </h3>
+                        <img src="image/quantum/icons/favourite.svg" alt="" />
+                    </div>
+                    <div class="subject">
+                        <h4>Biology</h4>
+                        <h4>Grade 4+1</h4>
+                    </div>
+                    <p class="unit-num">
+                        <span>5</span> Units <span>16</span> Lessons
+                        <span>22</span> Topics
+                    </p>
+                    <div class="classes">
+                        ALL Classes
+                        <img src="image/quantum/icons/arrow-down.svg" alt="" />
+                    </div>
+                    <div class="numbers">
+                        <div class="students">300 students</div>
+                        <div class="dates"></div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div><img src="image/quantum/icons/preview.svg" alt="" /></div>
+                    <div class="imag">
+                        <img src="image/quantum/icons/manage course.svg" alt="" />
+                    </div>
+                    <div class="imag">
+                        <img src="image/quantum/icons/grade submissions.svg" alt="" />
+                    </div>
+                    <div><img src="image/quantum/icons/reports.svg" alt="" /></div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="image">
+                    <div class="course-type">
+                        <span>Expired</span>
+                    </div>
+                    <img src="image/quantum/images/imageMask-2.png" alt="" />
+                </div>
+                <div class="detais">
+                    <div class="topic">
+                        <h3>Introduction to High School Mathematics</h3>
+                        <img src="image/quantum/icons/favourite.svg" alt="" />
+                    </div>
+                    <div class="subject">
+                        <h4>Mathematics</h4>
+                        <h4>Grade 5+3</h4>
+                    </div>
+                    <p class="unit-num">
+                        <span>4</span> Units <span>10</span> Lessons
+                        <span>24</span> Topics
+                    </p>
+                    <div class="classes">
+                        Mr Frank's Class A
+                        <img src="image/quantum/icons/arrow-down.svg" alt="" />
+                    </div>
+                    <div class="numbers">
+                        <div class="students">44 students</div>
+                        <div class="dates">14-Oct-2019 20-Oct-2019</div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div><img src="image/quantum/icons/preview.svg" alt="" /></div>
+                    <div>
+                        <img src="image/quantum/icons/manage course.svg" alt="" />
+                    </div>
+                    <div>
+                        <img src="image/quantum/icons/grade submissions.svg" alt="" />
+                    </div>
+                    <div><img src="image/quantum/icons/reports.svg" alt="" /></div>
+                </div>
+            </div>
         </div>
         <div class="b-footer">
             <span>About Us</span>

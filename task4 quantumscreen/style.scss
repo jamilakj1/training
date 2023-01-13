@@ -1,0 +1,325 @@
+@import './variables';
+body {
+    background-color: #EEEEEE;
+    font-family: myFirstFont;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    background-image: url("image/quantum/headerback.png");
+    border-bottom: 2px solid #31B9E4;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    div {
+        margin-left: auto;
+    }
+    .navbar {
+        display: flex;
+        align-content: center;
+        justify-content: right;
+        .hide {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        a {
+            align-items: center;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 17px;
+        }
+        .hamburger {
+            display: none;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 32px;
+        }
+    }
+}
+
+hr {
+    margin: 20px;
+}
+
+.course-class {
+    margin-top: 15px;
+    background-color: #8DDC97;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding-top: 6px;
+    .course-num {
+        border-bottom: 3px solid black;
+        div {
+            @include flexcenter();
+        }
+    }
+    div {
+        @include flexcenter();
+        div {
+            display: flex;
+            column-gap: 8px;
+            padding: 8px;
+            .num {
+                font-weight: bolder;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 10px 0px 20px;
+    .showing {
+        font-size: $textsize;
+        color: $textcolor;
+    }
+    select {
+        border-top: #EEEEEE;
+        border-left: #EEEEEE;
+        border-right: #EEEEEE;
+        border-bottom: 1px solid, $textcolor;
+        background-color: #EEEEEE;
+        font-size: 16px;
+        color: #333333;
+        font-weight: 600;
+    }
+}
+
+.courses {
+    display: grid;
+    padding: 24px;
+    column-gap: 24px;
+    row-gap: 24px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.course {
+    display: grid;
+    background-color: #FFFFFF;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 50px;
+    .image {
+        grid-row: 1;
+        grid-column: 1/span 4;
+        height: 160px;
+        width: 130px;
+        padding-bottom: 16px;
+        padding-right: 16px;
+        padding-left: 24px;
+        padding-top: 24px;
+        .course-type {
+            margin: -24px 0 0 -24px;
+            span {
+                color: #D80000;
+                background-color: rgb(234, 167, 167);
+            }
+            display: flex;
+            justify-content: flex-start;
+            font-size: $textsize;
+        }
+    }
+    .detais {
+        grid-row: 1;
+        grid-column: 5/span 8;
+        display: flex;
+        padding-top: 24px;
+        flex-direction: column;
+        h3,
+        h4,
+        p {
+            margin: 0px;
+        }
+        h3 {
+            line-height: 1.17em;
+            height: 2.34em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .topic {
+            display: flex;
+            padding-bottom: 7px;
+            justify-content: space-between;
+            padding-right: 20px;
+        }
+        .subject {
+            display: flex;
+            justify-content: left;
+            column-gap: 15px;
+            padding-bottom: 7px;
+            font-size: $textsize;
+            color: $textcolor;
+        }
+        .unit-num {
+            font-size: $textsize;
+            display: flex;
+            column-gap: 8px;
+            span {
+                font-weight: bolder
+            }
+        }
+        .classes {
+            @extend .texts;
+            border-bottom: 1px solid #1f283467;
+            margin-top: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000;
+            font-weight: bold;
+        }
+        .numbers {
+            display: flex;
+            font-size: $textsize;
+            color: $textcolor;
+            margin-top: 8px;
+            column-gap: 15px;
+        }
+    }
+    .icons {
+        grid-row: 2;
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: space-around;
+        .imag {
+            opacity: 40%;
+        }
+    }
+}
+
+.login-body {
+    @include flexcenter();
+    flex-direction: column;
+    border-top: 2px solid #31B9E4;
+    background-color: #FFFFFF;
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.b-header {
+    display: inline-flex;
+}
+
+.back {
+    margin-left: auto;
+    text-align: left;
+}
+
+.b-header span {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.radi {
+    padding-top: 14px;
+    align-items: center;
+    font-size: 10px;
+    img {
+        width: 10px;
+        height: 10px;
+        padding-left: 10px;
+    }
+}
+
+.texts {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #1F2834;
+}
+
+.inputs1 {
+    @extend .texts;
+    border-bottom: 1px solid #1F2834;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs2 {
+    @extend .texts;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.green {
+    @include green();
+}
+
+.datas {
+    button {
+        background-color: #3FD28B;
+        border: 0px;
+        color: #1F2834;
+        padding: 10px 80px;
+        border-radius: 5px;
+        margin-top: 10px;
+        justify-items: center;
+    }
+}
+
+.b-footer {
+    color: #1F7A54;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+#footer {
+    background-color: #E0E1E1;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+    padding-left: auto;
+    padding-right: auto;
+    img {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .hamburger {
+        display: flex !important;
+    }
+    .navbar .hide {
+        display: none !important;
+        position: absolute;
+    }
+    .courses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .course {
+            justify-self: center;
+            margin: 24px;
+        }
+        .icons .imag {
+            opacity: 200%;
+        }
+    }
+}
